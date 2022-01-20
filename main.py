@@ -15,12 +15,11 @@ hint_images = [f"images/hint{num}.gif" for num in range(9)]
 game_on = True
 
 window = Tk()
+window.title("Minesweeper")
 canvas = Canvas()
+canvas.config(width=screen_width*1.1, height=screen_height*1.1)
 canvas.pack()
 screen = turtle.TurtleScreen(canvas)
-# # screen.title("Minesweeper")
-# # screen.setup(width=screen_width*1.1, height=screen_height*1.1)
-# screen.screensize(canvheight=screen_height, canvwidth=screen_width)
 screen.tracer(0)
 
 for num in range(8):
